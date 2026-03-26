@@ -17,7 +17,7 @@ layer system designed for keyboards with 3x5 + 3-thumb keys per hand.
 Variant options used:
 - **Alphas:** QWERTY
 - **Nav:** Default (`caps_word LEFT DOWN UP RIGHT` on home row)
-- **Clipboard:** Default X11/terminal (`K_UNDO`, `Shift+Ins`, `Ctrl+Ins`, `Shift+Del`, `K_AGAIN`)
+- **Clipboard:** Default CUA (`Ctrl+Z`, `Ctrl+X`, `Ctrl+C`, `Ctrl+V`, `K_AGAIN`)
 
 ### Home-row mods (GACS order)
 
@@ -30,7 +30,7 @@ Hold a home-row key to activate a modifier instead of tapping the letter.
 | Middle | `D`      | `LCTRL`        | `K`       | `RCTRL`  |
 | Index  | `F`      | `LSHFT`        | `J`       | `RSHFT`  |
 
-Bottom-row ring keys (`X` and `.`) also have `RALT` (AltGr) on hold.
+`RALT` is available via the home-row mod on `L` (hold `L` → Right Alt).
 
 ### Thumb keys
 

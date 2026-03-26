@@ -15,7 +15,7 @@ LEFT HAND                    RIGHT HAND
 ```
   Q    W    E    R    T        Y    U    I    O    P
   A    S    D    F    G        H    J    K    L    '
-  Z    X*   C    V    B        N    M    ,    .*   /
+  Z    X    C    V    B        N    M    ,    .    /
        [Esc] [Spc] [Tab]      [Ent] [Bsp] [Del]
 ```
 
@@ -24,10 +24,9 @@ LEFT HAND                    RIGHT HAND
 | Key | Hold      |     | Key | Hold      |
 | --- | --------- | --- | --- | --------- |
 | `A` | Super/Win |     | `'` | Super/Win |
-| `S` | Alt       |     | `L` | AltGr     |
+| `S` | Alt       |     | `L` | Alt       |
 | `D` | Ctrl      |     | `K` | Ctrl      |
 | `F` | Shift     |     | `J` | Shift     |
-| `X` | AltGr     |     | `.` | AltGr     |
 
 > Mods only trigger on **opposite-hand** keys. Same-hand rolls always produce letters.
 
@@ -38,18 +37,18 @@ LEFT HAND                    RIGHT HAND
 ```
   ---  ---  ---  ---  ---      RDO  PST  CPY  CUT  UND
   GUI  ALT  CTL  SHT  ---      CAPS ←    ↓    ↑    →
-  ---  RALT ---  ---  ---      INS  HOME PgDn PgUp END
+  ---  ---  ---  ---  ---      INS  HOME PgDn PgUp END
         [---] [Nav] [---]      [Ret] [Bsp] [Del]
 ```
 
-**Clipboard** (X11/terminal):
+**Clipboard** (CUA bindings):
 
 | Key   | Action    |
 | ----- | --------- |
-| `UND` | K_UNDO    |
-| `CUT` | Shift+Del |
-| `CPY` | Ctrl+Ins  |
-| `PST` | Shift+Ins |
+| `UND` | Ctrl+Z    |
+| `CUT` | Ctrl+X    |
+| `CPY` | Ctrl+C    |
+| `PST` | Ctrl+V    |
 | `RDO` | K_AGAIN   |
 
 ---
@@ -59,12 +58,12 @@ LEFT HAND                    RIGHT HAND
 ```
   ---  ---  ---  ---  ---      RDO  PST  CPY  CUT  UND
   GUI  ALT  CTL  SHT  ---      ---  ←    ↓    ↑    →
-  ---  RALT ---  ---  ---      ---  WL   WD   WU   WR
+  ---  ---  ---  ---  ---      ---  WL   WD   WU   WR
       [---] [---] [Mouse]      [MB2] [MB1] [MB3]
 ```
 
-Mouse move (←↓↑→) on home row inner-to-pinkie. Scroll (WL/WD/WU/WR) on bottom row.
-MB1 = left click, MB2 = right click, MB3 = middle click.
+Mouse move (on home row) and scroll (on bottom row) mirror Nav arrow layout.
+MB1 = left click (middle thumb), MB2 = right click (inner thumb), MB3 = middle click (outer thumb).
 
 ---
 
@@ -72,8 +71,8 @@ MB1 = left click, MB2 = right click, MB3 = middle click.
 
 ```
   ---  ---  ---  ---  ---      ---  ---  ---  ---  ---
-  GUI  ALT  CTL  SHT  ---      Prev VDn  VUp  Next OUT
-  ---  RALT ---  ---  ---      BT0  BT1  BT2  BT3  BCLR
+  GUI  ALT  CTL  SHT  ---      OUT  Prev VDn  VUp  Next
+  ---  ---  ---  ---  ---      BCLR BT0  BT1  BT2  BT3
       [Media] [---] [---]      [Stop] [PP] [Mute]
 ```
 
@@ -82,7 +81,7 @@ MB1 = left click, MB2 = right click, MB3 = middle click.
 | Key     | Action                   |
 | ------- | ------------------------ |
 | `BT0-3` | Switch to BT profile 0-3 |
-| `BCLR`  | Clear all BT bonds       |
+| `BCLR`  | Clear current BT profile |
 | `OUT`   | Toggle USB / BLE output  |
 
 ---
@@ -92,7 +91,7 @@ MB1 = left click, MB2 = right click, MB3 = middle click.
 ```
   [    7    8    9    ]        ---  ---  ---  ---  ---
   ;    4    5    6    =        ---  SHT  CTL  ALT  GUI
-  `    1    2    3    \        ---  ---  ---  RALT ---
+  `    1    2    3    \        ---  ---  ---  ---  ---
           [.]  [0]  [-]        [---] [Num] [---]
 ```
 
@@ -103,7 +102,7 @@ MB1 = left click, MB2 = right click, MB3 = middle click.
 ```
   {    &    *    (    }        ---  ---  ---  ---  ---
   :    $    %    ^    +        ---  SHT  CTL  ALT  GUI
-  ~    !    @    #    |        ---  ---  ---  RALT ---
+  ~    !    @    #    |        ---  ---  ---  ---  ---
           [(]  [)]  [_]        [Sym] [---] [---]
 ```
 
@@ -114,7 +113,7 @@ MB1 = left click, MB2 = right click, MB3 = middle click.
 ```
  F12   F7   F8   F9  PSCRN     ---  ---  ---  ---  ---
  F11   F4   F5   F6  SLCK      ---  SHT  CTL  ALT  GUI
- F10   F1   F2   F3  PAUSE    UNLK ---  ---  RALT ---
+ F10   F1   F2   F3  PAUSE    UNLK  ---  ---  ---  ---
        [App] [Spc] [Tab]      [---] [---] [Fun]
 ```
 
