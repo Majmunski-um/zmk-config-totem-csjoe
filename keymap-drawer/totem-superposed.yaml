@@ -1,0 +1,118 @@
+layout:
+  dts_layout: config/boards/shields/totem/totem.dtsi
+
+draw_config:
+  key_w: 72
+  key_h: 68
+  split_gap: 36
+  key_rx: 6
+  key_ry: 6
+  inner_pad_w: 2
+  inner_pad_h: 2
+  outer_pad_w: 28
+  outer_pad_h: 28
+  append_colon_to_layer_header: false
+  svg_extra_style: |
+    svg { background: #1e1e2e; }
+    rect.key { fill: #313244; stroke: #45475a; }
+    text { font-family: "JetBrains Mono", "Fira Code", monospace; fill: #cdd6f4; }
+    text.tap   { font-size: 11px; font-weight: bold; fill: #cdd6f4; }
+    text.tl    { font-size: 7px;  fill: #89b4fa; }
+    text.tr    { font-size: 7px;  fill: #a6e3a1; }
+    text.left  { font-size: 7px;  fill: #fab387; }
+    text.right { font-size: 7px;  fill: #cba6f7; }
+    text.bl    { font-size: 7px;  fill: #f9e2af; }
+    text.br    { font-size: 7px;  fill: #f38ba8; }
+    text.hold  { font-size: 7px;  fill: #6c7086; }
+    .layer-header text { font-size: 13px; fill: #cdd6f4; font-weight: bold; }
+
+layers:
+  # Legend positions:
+  #   tl=Nav(blue)  t=Base(white)  tr=Mouse(green)
+  #   left=Media(orange)           right=Num(purple)
+  #   bl=Sym(yellow)               br=Fun(red)
+  #   h=hold(gray, base layer mods only)
+  All Layers:
+  # ── Row 0 ──────────────────────────────────────────────────────────────────
+  # key 0
+  - {tl: BOOT,  t: Q,   tr: BOOT,  left: BOOT,  right: "[",  bl: "{",  br: F12}
+  # key 1
+  - {t: W,   tr: "",  tl: "",  right: "7",  bl: "&",  br: F7}
+  # key 2
+  - {t: E,   right: "8",  bl: "*",  br: F8}
+  # key 3
+  - {t: R,   right: "9",  bl: "(",  br: F9}
+  # key 4
+  - {t: T,   right: "]",  bl: "}",  br: PSCRN}
+  # key 5
+  - {tl: REDO,  t: Y,  tr: REDO,  bl: "",  br: ""}
+  # key 6
+  - {tl: PASTE, t: U,  tr: PASTE, bl: "",  br: ""}
+  # key 7
+  - {tl: COPY,  t: I,  tr: COPY,  left: VOL+, bl: "",  br: ""}
+  # key 8
+  - {tl: CUT,   t: O,  tr: CUT,   bl: "",  br: ""}
+  # key 9
+  - {tl: UNDO,  t: P,  tr: UNDO,  right: BOOT, bl: BOOT, br: BOOT}
+
+  # ── Row 1 ──────────────────────────────────────────────────────────────────
+  # key 10
+  - {tl: GUI,   t: A,    h: GUI,  tr: GUI,   left: GUI,   right: "",   bl: ":",   br: F11}
+  # key 11
+  - {tl: ALT,   t: S,    h: ALT,  tr: ALT,   left: ALT,   right: "4",  bl: "$",   br: F4}
+  # key 12
+  - {tl: CTL,   t: D,    h: CTL,  tr: CTL,   left: CTL,   right: "5",  bl: "%",   br: F5}
+  # key 13
+  - {tl: SHT,   t: F,    h: SHT,  tr: SHT,   left: SHT,   right: "6",  bl: "^",   br: F6}
+  # key 14
+  - {t: G,   right: "=",  bl: "+",  br: SLCK}
+  # key 15
+  - {tl: CAPS,  t: H,  tr: "",    left: PREV,  right: "",   bl: "",    br: ""}
+  # key 16
+  - {tl: "←",  t: J,    h: SHT,  tr: MS←,   left: V-,    right: SHT,  bl: SHT,   br: SHT}
+  # key 17
+  - {tl: "↓",  t: K,    h: CTL,  tr: MS↓,   left: V+,    right: CTL,  bl: CTL,   br: CTL}
+  # key 18
+  - {tl: "↑",  t: L,    h: ALT,  tr: MS↑,   left: NEXT,  right: ALT,  bl: ALT,   br: ALT}
+  # key 19
+  - {tl: "→",  t: "'",  h: GUI,  tr: MS→,   left: OUT,   right: GUI,  bl: GUI,   br: GUI}
+
+  # ── Row 2 ──────────────────────────────────────────────────────────────────
+  # key 20  (outer left pinkie — unused in Base)
+  - ""
+  # key 21
+  - {t: Z,   right: "`",  bl: "~",  br: F10}
+  # key 22
+  - {t: X,   h: RALT,  tl: RALT,  tr: RALT,  left: RALT,  right: "1",  bl: "!",  br: F1}
+  # key 23
+  - {t: C,   right: "2",  bl: "@",  br: F2}
+  # key 24
+  - {t: V,   right: "3",  bl: "#",  br: F3}
+  # key 25
+  - {t: B,   right: "\\", bl: "|",  br: PAUSE}
+  # key 26
+  - {tl: INS,   t: N,  tr: "",    left: BT0,  right: "",   bl: "",     br: STUDIO}
+  # key 27
+  - {tl: HOME,  t: M,  tr: WH←,  left: BT1,  right: "",   bl: "",     br: ""}
+  # key 28
+  - {tl: PgDn,  t: ",", tr: WH↓,  left: BT2,  right: "",   bl: "",     br: ""}
+  # key 29
+  - {tl: PgUp,  t: .,   h: RALT,  tr: WH↑,   left: BT3,   right: RALT, bl: RALT,  br: RALT}
+  # key 30
+  - {tl: END,   t: /,  tr: WH→,  left: BCLR, right: "",   bl: "",     br: ""}
+  # key 31  (outer right pinkie — unused in Base)
+  - ""
+
+  # ── Thumbs ─────────────────────────────────────────────────────────────────
+  # key 32
+  - {t: ESC, h: Media}
+  # key 33
+  - {t: SPC, h: Nav}
+  # key 34
+  - {t: TAB, h: Mouse}
+  # key 35
+  - {t: RET, h: Sym,  tl: RET,  tr: MB2,  left: STOP, bl: "("}
+  # key 36
+  - {t: BSPC, h: Num, tl: BSPC, tr: MB1,  left: PP,   bl: ")"}
+  # key 37
+  - {t: DEL, h: Fun,  tl: DEL,  tr: MB3,  left: MUTE, bl: "_"}
