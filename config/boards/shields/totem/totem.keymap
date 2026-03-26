@@ -71,21 +71,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-//              [ 0]           [ 1]           [ 2]           [ 3]           [ 4]                [ 5]           [ 6]           [ 7]           [ 8]           [ 9]
-//              [10]           [11]           [12]           [13]           [14]                [15]           [16]           [17]           [18]           [19]
-// [20]         [21]           [22]           [23]           [24]           [25]                [26]           [27]           [28]           [29]           [30]           [31]
-//                                            [32]           [33]           [34]                [35]           [36]           [37]
-
         base_layer {
             display-name = "Base";
             bindings = <
-//              Q              W              E              R              T                   Y              U              I              O              P
                 &kp Q          &kp W          &kp E          &kp R          &kp T               &kp Y          &kp U          &kp I          &kp O          &kp P
-//              A/GUI          S/ALT          D/CTL          F/SHT          G                   H              J/SHT          K/CTL          L/ALT          '/GUI
                 &hml LGUI A    &hml LALT S    &hml LCTRL D   &hml LSHFT F   &kp G               &kp H          &hmr RSHFT J   &hmr RCTRL K   &hmr RALT L    &hmr RGUI SQT
-//  none        Z              X/RALT         C              V              B                   N              M              ,              ./RALT         /              none
     &none       &kp Z          &mt RALT X     &kp C          &kp V          &kp B               &kp N          &kp M          &kp COMMA      &mt RALT DOT   &kp FSLH       &none
-//                             Esc/Media      Spc/Nav        Tab/Mouse                          Ent/Sym        Bsp/Num        Del/Fun
                                &lt MEDIA ESC  &lt NAV SPC    &lt MOUSE TAB  &lt SYM RET         &lt NUM BSPC   &lt FUN DEL
             >;
         };
@@ -93,13 +84,9 @@
         nav_layer {
             display-name = "Nav";
             bindings = <
-//              boot           ---            ---            ---            ---                 redo           paste          copy           cut            undo
                 &none          &none          &none          &none          &none               U_RDO          U_PST          U_CPY          U_CUT          U_UND
-//              GUI            ALT            CTL            SHT            ---                 caps           left           down           up             right
                 &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &none               &caps_word     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT
-//  none        ---            RALT           ---            ---            ---                 ins            home           pg_dn          pg_up          end            none
     &none       &none          &kp RALT       &none          &none          &none               &kp INS        &kp HOME       &kp PG_DN      &kp PG_UP      &kp END        &none
-//                             ---            ---            ---                                ret            bspc           del
                                &none          &none          &none          &kp RET             &kp BSPC       &kp DEL
             >;
         };
@@ -107,13 +94,9 @@
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-//              boot           ---            ---            ---            ---                 redo           paste          copy           cut            undo
                 &none          &none          &none          &none          &none               U_RDO          U_PST          U_CPY          U_CUT          U_UND
-//              GUI            ALT            CTL            SHT            ---                 ---            ms_l           ms_d           ms_u           ms_r
                 &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &none               &none          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT
-//  none        ---            RALT           ---            ---            ---                 ---            wh_l           wh_d           wh_u           wh_r           none
     &none       &none          &kp RALT       &none          &none          &none               &none          &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT &none
-//                             ---            ---            ---                                btn2           btn1           btn3
                                &none          &none          &none          &mkp MB2            &mkp MB1       &mkp MB3
             >;
         };
@@ -121,13 +104,9 @@
         media_layer {
             display-name = "Media";
             bindings = <
-//              boot           ---            ---            ---            ---                 ---            ---            ---            ---            ---
                 &none          &none          &none          &none          &none               &none          &none          &none          &none          &none
-//              GUI            ALT            CTL            SHT            ---                 prev           vol_dn         vol_up         next           out_tog
                 &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &none               &kp C_PREV     &kp C_VOL_DN   &kp C_VOL_UP   &kp C_NEXT     &out OUT_TOG
-//  none        ---            RALT           ---            ---            ---                 bt0            bt1            bt2            bt3            bt_clr         none
     &none       &none          &kp RALT       &none          &none          &none               &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR     &none
-//                             ---            ---            ---                                stop           pp             mute
                                &none          &none          &none          &kp C_STOP          &kp C_PP       &kp C_MUTE
             >;
         };
@@ -135,13 +114,9 @@
         num_layer {
             display-name = "Num";
             bindings = <
-//              [              7              8              9              ]                   ---            ---            ---            ---            boot
                 &kp LBKT       &kp N7         &kp N8         &kp N9         &kp RBKT            &none          &none          &none          &none          &none
-//              ;              4              5              6              =                   ---            SHT            CTL            ALT            GUI
                 &kp SEMI       &kp N4         &kp N5         &kp N6         &kp EQUAL           &none          &kp RSHFT      &kp RCTRL      &kp RALT       &kp RGUI
-//  none        `              1              2              3              \                   ---            ---            ---            RALT           ---            none
     &none       &kp GRAVE      &kp N1         &kp N2         &kp N3         &kp BSLH            &none          &none          &none          &kp RALT       &none          &none
-//                             .              0              -                                  ---            ---            ---
                                &kp DOT        &kp N0         &kp MINUS      &none               &none          &none
             >;
         };
@@ -149,13 +124,9 @@
         sym_layer {
             display-name = "Sym";
             bindings = <
-//              {              &              *              (              }                   ---            ---            ---            ---            boot
                 &kp LBRC       &kp AMPS       &kp STAR       &kp LPAR       &kp RBRC            &none          &none          &none          &none          &none
-//              :              $              %              ^              +                   ---            SHT            CTL            ALT            GUI
                 &kp COLON      &kp DLLR       &kp PRCNT      &kp CARET      &kp PLUS            &none          &kp RSHFT      &kp RCTRL      &kp RALT       &kp RGUI
-//  none        ~              !              @              #              |                   ---            ---            ---            RALT           ---            none
     &none       &kp TILDE      &kp EXCL       &kp AT         &kp HASH       &kp PIPE            &none          &none          &none          &kp RALT       &none          &none
-//                             (              )              _                                  ---            ---            ---
                                &kp LPAR       &kp RPAR       &kp UNDER      &none               &none          &none
             >;
         };
@@ -163,13 +134,9 @@
         fun_layer {
             display-name = "Fun";
             bindings = <
-//              F12            F7             F8             F9             pscr                ---            ---            ---            ---            boot
                 &kp F12        &kp F7         &kp F8         &kp F9         &kp PSCRN           &none          &none          &none          &none          &none
-//              F11            F4             F5             F6             slck                ---            SHT            CTL            ALT            GUI
                 &kp F11        &kp F4         &kp F5         &kp F6         &kp SLCK            &none          &kp RSHFT      &kp RCTRL      &kp RALT       &kp RGUI
-//  none        F10            F1             F2             F3             pause               studio         ---            ---            RALT           ---            none
     &none       &kp F10        &kp F1         &kp F2         &kp F3         &kp PAUSE_BREAK     &studio_unlock &none          &none          &kp RALT       &none          &none
-//                             app            spc            tab                                ---            ---            ---
                                &kp K_APP      &kp SPC        &kp TAB        &none               &none          &none
             >;
         };
