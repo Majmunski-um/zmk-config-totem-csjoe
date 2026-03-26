@@ -36,7 +36,7 @@ LEFT HAND                    RIGHT HAND
 ## Layer 1 — Nav (hold Space)
 
 ```
- boot  ---  ---  ---  ---      RDO  PST  CPY  CUT  UND
+  ---  ---  ---  ---  ---      RDO  PST  CPY  CUT  UND
   GUI  ALT  CTL  SHT  ---      CAPS ←    ↓    ↑    →
   ---  RALT ---  ---  ---      INS  HOME PgDn PgUp END
         [---] [Nav] [---]      [Ret] [Bsp] [Del]
@@ -57,7 +57,7 @@ LEFT HAND                    RIGHT HAND
 ## Layer 2 — Mouse (hold Tab)
 
 ```
- boot  ---  ---  ---  ---      RDO  PST  CPY  CUT  UND
+  ---  ---  ---  ---  ---      RDO  PST  CPY  CUT  UND
   GUI  ALT  CTL  SHT  ---      ---  ←    ↓    ↑    →
   ---  RALT ---  ---  ---      ---  WL   WD   WU   WR
       [---] [---] [Mouse]      [MB2] [MB1] [MB3]
@@ -71,7 +71,7 @@ MB1 = left click, MB2 = right click, MB3 = middle click.
 ## Layer 3 — Media (hold Esc)
 
 ```
- boot  ---  ---  ---  ---      ---  ---  ---  ---  ---
+  ---  ---  ---  ---  ---      ---  ---  ---  ---  ---
   GUI  ALT  CTL  SHT  ---      Prev VDn  VUp  Next OUT
   ---  RALT ---  ---  ---      BT0  BT1  BT2  BT3  BCLR
       [Media] [---] [---]      [Stop] [PP] [Mute]
@@ -90,7 +90,7 @@ MB1 = left click, MB2 = right click, MB3 = middle click.
 ## Layer 4 — Num (hold Backspace)
 
 ```
-  [    7    8    9    ]        ---  ---  ---  ---  boot
+  [    7    8    9    ]        ---  ---  ---  ---  ---
   ;    4    5    6    =        ---  SHT  CTL  ALT  GUI
   `    1    2    3    \        ---  ---  ---  RALT ---
           [.]  [0]  [-]        [---] [Num] [---]
@@ -101,7 +101,7 @@ MB1 = left click, MB2 = right click, MB3 = middle click.
 ## Layer 5 — Sym (hold Enter)
 
 ```
-  {    &    *    (    }        ---  ---  ---  ---  boot
+  {    &    *    (    }        ---  ---  ---  ---  ---
   :    $    %    ^    +        ---  SHT  CTL  ALT  GUI
   ~    !    @    #    |        ---  ---  ---  RALT ---
           [(]  [)]  [_]        [Sym] [---] [---]
@@ -112,7 +112,7 @@ MB1 = left click, MB2 = right click, MB3 = middle click.
 ## Layer 6 — Fun (hold Delete)
 
 ```
- F12   F7   F8   F9  PSCRN     ---  ---  ---  ---  boot
+ F12   F7   F8   F9  PSCRN     ---  ---  ---  ---  ---
  F11   F4   F5   F6  SLCK      ---  SHT  CTL  ALT  GUI
  F10   F1   F2   F3  PAUSE    UNLK ---  ---  RALT ---
        [App] [Spc] [Tab]      [---] [---] [Fun]

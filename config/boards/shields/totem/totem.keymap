@@ -94,7 +94,7 @@
             display-name = "Nav";
             bindings = <
 //              boot           ---            ---            ---            ---                 redo           paste          copy           cut            undo
-                &bootloader    &none          &none          &none          &none               U_RDO          U_PST          U_CPY          U_CUT          U_UND
+                &none          &none          &none          &none          &none               U_RDO          U_PST          U_CPY          U_CUT          U_UND
 //              GUI            ALT            CTL            SHT            ---                 caps           left           down           up             right
                 &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &none               &caps_word     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT
 //  none        ---            RALT           ---            ---            ---                 ins            home           pg_dn          pg_up          end            none
@@ -108,7 +108,7 @@
             display-name = "Mouse";
             bindings = <
 //              boot           ---            ---            ---            ---                 redo           paste          copy           cut            undo
-                &bootloader    &none          &none          &none          &none               U_RDO          U_PST          U_CPY          U_CUT          U_UND
+                &none          &none          &none          &none          &none               U_RDO          U_PST          U_CPY          U_CUT          U_UND
 //              GUI            ALT            CTL            SHT            ---                 ---            ms_l           ms_d           ms_u           ms_r
                 &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &none               &none          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT
 //  none        ---            RALT           ---            ---            ---                 ---            wh_l           wh_d           wh_u           wh_r           none
@@ -122,7 +122,7 @@
             display-name = "Media";
             bindings = <
 //              boot           ---            ---            ---            ---                 ---            ---            ---            ---            ---
-                &bootloader    &none          &none          &none          &none               &none          &none          &none          &none          &none
+                &none          &none          &none          &none          &none               &none          &none          &none          &none          &none
 //              GUI            ALT            CTL            SHT            ---                 prev           vol_dn         vol_up         next           out_tog
                 &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &none               &kp C_PREV     &kp C_VOL_DN   &kp C_VOL_UP   &kp C_NEXT     &out OUT_TOG
 //  none        ---            RALT           ---            ---            ---                 bt0            bt1            bt2            bt3            bt_clr         none
@@ -136,7 +136,7 @@
             display-name = "Num";
             bindings = <
 //              [              7              8              9              ]                   ---            ---            ---            ---            boot
-                &kp LBKT       &kp N7         &kp N8         &kp N9         &kp RBKT            &none          &none          &none          &none          &bootloader
+                &kp LBKT       &kp N7         &kp N8         &kp N9         &kp RBKT            &none          &none          &none          &none          &none
 //              ;              4              5              6              =                   ---            SHT            CTL            ALT            GUI
                 &kp SEMI       &kp N4         &kp N5         &kp N6         &kp EQUAL           &none          &kp RSHFT      &kp RCTRL      &kp RALT       &kp RGUI
 //  none        `              1              2              3              \                   ---            ---            ---            RALT           ---            none
@@ -150,7 +150,7 @@
             display-name = "Sym";
             bindings = <
 //              {              &              *              (              }                   ---            ---            ---            ---            boot
-                &kp LBRC       &kp AMPS       &kp STAR       &kp LPAR       &kp RBRC            &none          &none          &none          &none          &bootloader
+                &kp LBRC       &kp AMPS       &kp STAR       &kp LPAR       &kp RBRC            &none          &none          &none          &none          &none
 //              :              $              %              ^              +                   ---            SHT            CTL            ALT            GUI
                 &kp COLON      &kp DLLR       &kp PRCNT      &kp CARET      &kp PLUS            &none          &kp RSHFT      &kp RCTRL      &kp RALT       &kp RGUI
 //  none        ~              !              @              #              |                   ---            ---            ---            RALT           ---            none
@@ -164,7 +164,7 @@
             display-name = "Fun";
             bindings = <
 //              F12            F7             F8             F9             pscr                ---            ---            ---            ---            boot
-                &kp F12        &kp F7         &kp F8         &kp F9         &kp PSCRN           &none          &none          &none          &none          &bootloader
+                &kp F12        &kp F7         &kp F8         &kp F9         &kp PSCRN           &none          &none          &none          &none          &none
 //              F11            F4             F5             F6             slck                ---            SHT            CTL            ALT            GUI
                 &kp F11        &kp F4         &kp F5         &kp F6         &kp SLCK            &none          &kp RSHFT      &kp RCTRL      &kp RALT       &kp RGUI
 //  none        F10            F1             F2             F3             pause               studio         ---            ---            RALT           ---            none

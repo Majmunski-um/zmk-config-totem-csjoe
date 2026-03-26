@@ -54,13 +54,6 @@ Tap for the primary key, hold to activate the named layer.
 | 6   | **Fun**      | Hold `Del`        | F-keys, Print Screen, `studio_unlock`           |
 | 7-9 | _(reserved)_ | --                | Extra layers available in ZMK Studio            |
 
-### Bootloader access
-
-`&bootloader` is on the top-row pinkie of every layer:
-
-- **Left pinkie (pos 0):** Nav, Mouse, Media layers
-- **Right pinkie (pos 9):** Num, Sym, Fun layers
-
 ---
 
 ## ZMK Studio
@@ -93,7 +86,7 @@ config/
     Kconfig.shield                      # Shield detection
     totem.zmk.yml                       # Shield metadata (features: keys, studio)
     totem.dtsi                          # Matrix transform + physical layout (ZMK Studio)
-    totem.keymap                        # Miryoku QWERTY (Vi) keymap
+    totem.keymap                        # Miryoku QWERTY keymap
     totem_left.overlay                  # Left half GPIO pins
     totem_right.overlay                 # Right half GPIO pins (mirrored)
 .github/workflows/build.yml            # CI: builds firmware on every push
