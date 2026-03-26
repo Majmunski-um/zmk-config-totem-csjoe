@@ -9,15 +9,14 @@ TOTEM is a 38-key column-staggered wireless split keyboard powered by two
 
 ---
 
-## Layout — Miryoku QWERTY (Vi nav)
+## Layout — Miryoku QWERTY
 
 This config uses [Miryoku](https://github.com/manna-harbour/miryoku), an ergonomic
 layer system designed for keyboards with 3x5 + 3-thumb keys per hand.
 
 Variant options used:
-
 - **Alphas:** QWERTY
-- **Nav:** Vi-style (`LEFT DOWN UP RIGHT` on home row, like hjkl)
+- **Nav:** Default (`caps_word LEFT DOWN UP RIGHT` on home row)
 - **Clipboard:** Default X11/terminal (`K_UNDO`, `Shift+Ins`, `Ctrl+Ins`, `Shift+Del`, `K_AGAIN`)
 
 ### Home-row mods (GACS order)
@@ -47,8 +46,8 @@ Tap for the primary key, hold to activate the named layer.
 | #   | Name         | Thumb to activate | Purpose                                         |
 | --- | ------------ | ----------------- | ----------------------------------------------- |
 | 0   | **Base**     | --                | QWERTY + home-row mods                          |
-| 1   | **Nav**      | Hold `Space`      | Vi arrows (LDUR), Home/End/PgUp/PgDn, clipboard |
-| 2   | **Mouse**    | Hold `Tab`        | Vi mouse move, scroll (4-way), MB1/MB2/MB3      |
+| 1 | **Nav** | Hold `Space` | Arrows, caps_word, Home/End/PgUp/PgDn, clipboard |
+| 2 | **Mouse** | Hold `Tab` | Mouse move, scroll (4-way), MB1/MB2/MB3 |
 | 3   | **Media**    | Hold `Esc`        | Vol, prev/next, BT profiles, OUT_TOG, BT_CLR    |
 | 4   | **Num**      | Hold `Bksp`       | Number pad + operators                          |
 | 5   | **Sym**      | Hold `Enter`      | Shifted symbols `{}[]()` etc.                   |

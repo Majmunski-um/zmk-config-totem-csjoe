@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-// Miryoku QWERTY (Vi nav) for the TOTEM (38 keys)
+// Miryoku QWERTY for the TOTEM (38 keys)
 // Layers: Base / Nav / Mouse / Media / Num / Sym / Fun
 // Thumb keys (L>R): Esc/Media  Space/Nav  Tab/Mouse | Enter/Sym  Bksp/Num  Del/Fun
 // Home-row mods (GACS): A=LGUI  S=LALT  D=LCTRL  F=LSHFT  (mirrored right)
@@ -95,10 +95,10 @@
             bindings = <
 //              boot           ---            ---            ---            ---                 redo           paste          copy           cut            undo
                 &bootloader    &none          &none          &none          &none               U_RDO          U_PST          U_CPY          U_CUT          U_UND
-//              GUI            ALT            CTL            SHT            ---                 left           down           up             right          caps
-                &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &none               &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &caps_word
-//  none        ---            RALT           ---            ---            ---                 home           pg_dn          pg_up          end            ins            none
-    &none       &none          &kp RALT       &none          &none          &none               &kp HOME       &kp PG_DN      &kp PG_UP      &kp END        &kp INS        &none
+//              GUI            ALT            CTL            SHT            ---                 caps           left           down           up             right
+                &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &none               &caps_word     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT
+//  none        ---            RALT           ---            ---            ---                 ins            home           pg_dn          pg_up          end            none
+    &none       &none          &kp RALT       &none          &none          &none               &kp INS        &kp HOME       &kp PG_DN      &kp PG_UP      &kp END        &none
 //                             ---            ---            ---                                ret            bspc           del
                                &none          &none          &none          &kp RET             &kp BSPC       &kp DEL
             >;
@@ -109,10 +109,10 @@
             bindings = <
 //              boot           ---            ---            ---            ---                 redo           paste          copy           cut            undo
                 &bootloader    &none          &none          &none          &none               U_RDO          U_PST          U_CPY          U_CUT          U_UND
-//              GUI            ALT            CTL            SHT            ---                 ms_l           ms_d           ms_u           ms_r           ---
-                &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &none               &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT &none
-//  none        ---            RALT           ---            ---            ---                 wh_l           wh_d           wh_u           wh_r           ---            none
-    &none       &none          &kp RALT       &none          &none          &none               &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT &none          &none
+//              GUI            ALT            CTL            SHT            ---                 ---            ms_l           ms_d           ms_u           ms_r
+                &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &none               &none          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT
+//  none        ---            RALT           ---            ---            ---                 ---            wh_l           wh_d           wh_u           wh_r           none
+    &none       &none          &kp RALT       &none          &none          &none               &none          &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT &none
 //                             ---            ---            ---                                btn2           btn1           btn3
                                &none          &none          &none          &mkp MB2            &mkp MB1       &mkp MB3
             >;

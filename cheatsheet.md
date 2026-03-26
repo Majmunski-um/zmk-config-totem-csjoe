@@ -1,4 +1,4 @@
-# TOTEM Cheat Sheet — Miryoku QWERTY (Vi nav)
+# TOTEM Cheat Sheet — Miryoku QWERTY
 
 ## Thumb keys
 
@@ -37,8 +37,8 @@ LEFT HAND                    RIGHT HAND
 
 ```
  boot  ---  ---  ---  ---      RDO  PST  CPY  CUT  UND
-  GUI  ALT  CTL  SHT  ---      ←    ↓    ↑    →   CAPS
-  ---  RALT ---  ---  ---      HOME PgDn PgUp END  INS
+  GUI  ALT  CTL  SHT  ---      CAPS ←    ↓    ↑    →
+  ---  RALT ---  ---  ---      INS  HOME PgDn PgUp END
         [---] [Nav] [---]      [Ret] [Bsp] [Del]
 ```
 
@@ -58,12 +58,12 @@ LEFT HAND                    RIGHT HAND
 
 ```
  boot  ---  ---  ---  ---      RDO  PST  CPY  CUT  UND
-  GUI  ALT  CTL  SHT  ---      ←    ↓    ↑    →   ---
-  ---  RALT ---  ---  ---      WL   WD   WU   WR   ---
+  GUI  ALT  CTL  SHT  ---      ---  ←    ↓    ↑    →
+  ---  RALT ---  ---  ---      ---  WL   WD   WU   WR
       [---] [---] [Mouse]      [MB2] [MB1] [MB3]
 ```
 
-Mouse move (←↓↑→) on home row. Scroll (WL/WD/WU/WR) on bottom row.
+Mouse move (←↓↑→) on home row inner-to-pinkie. Scroll (WL/WD/WU/WR) on bottom row.
 MB1 = left click, MB2 = right click, MB3 = middle click.
 
 ---
