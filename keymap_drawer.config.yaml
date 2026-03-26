@@ -1,0 +1,48 @@
+parse_config:
+  raw_binding_map:
+    "&bootloader": "BOOT"
+    "&caps_word": "CAPS\nWORD"
+    "&studio_unlock": "STUDIO\nUNLOCK"
+    "&out OUT_TOG": "OUT\nTOG"
+    "&bt BT_SEL 0": "BT 0"
+    "&bt BT_SEL 1": "BT 1"
+    "&bt BT_SEL 2": "BT 2"
+    "&bt BT_SEL 3": "BT 3"
+    "&bt BT_CLR": "BT\nCLR"
+    "&kp K_UNDO": "UNDO"
+    "&kp K_AGAIN": "REDO"
+    "&kp LS(DEL)": "CUT"
+    "&kp LC(INS)": "COPY"
+    "&kp LS(INS)": "PASTE"
+    "&mkp MB1": "MB1"
+    "&mkp MB2": "MB2"
+    "&mkp MB3": "MB3"
+    "&mmv MOVE_LEFT": "$$mdi:cursor-move$$"
+    "&mmv MOVE_RIGHT": "$$mdi:cursor-move$$"
+    "&mmv MOVE_UP": "$$mdi:cursor-move$$"
+    "&mmv MOVE_DOWN": "$$mdi:cursor-move$$"
+    "&msc SCRL_LEFT": "SCR\nL"
+    "&msc SCRL_RIGHT": "SCR\nR"
+    "&msc SCRL_UP": "SCR\nU"
+    "&msc SCRL_DOWN": "SCR\nD"
+
+draw_config:
+  key_w: 60
+  key_h: 56
+  split_gap: 30
+  combo_w: 28
+  combo_h: 26
+  key_rx: 6
+  key_ry: 6
+  inner_pad_w: 2
+  inner_pad_h: 2
+  outer_pad_w: 30
+  outer_pad_h: 20
+  line_spacing: 1.2
+  arc_radius: 6
+  append_colon_to_layer_header: true
+  small_pad: 2
+  svg_extra_style: |
+    text { font-family: "JetBrains Mono", "Fira Code", monospace; }
+    .hml, .hmr { fill: #dbeafe; }
+    .lt { fill: #dcfce7; }
