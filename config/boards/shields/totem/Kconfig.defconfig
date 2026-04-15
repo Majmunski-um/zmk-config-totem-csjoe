@@ -10,6 +10,8 @@ config ZMK_SLEEP
 config ZMK_POINTING
     default y
 
+CONFIG_ZMK_BOARD_COMPAT=y
+
 if SHIELD_TOTEM_DONGLE
 
     config ZMK_KEYBOARD_NAME
