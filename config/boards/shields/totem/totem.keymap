@@ -9,7 +9,7 @@
 // Home-row mods (GACS): A=LGUI  S=LALT  D=LCTRL  F=LSHFT  (mirrored right)
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys_de.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
